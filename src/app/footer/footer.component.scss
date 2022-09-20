@@ -1,0 +1,15 @@
+.footer {
+    font-size: small;
+    z-index: 50;
+    color: rgb(172, 171, 171);
+    opacity: 1; // Leave this as 1
+  background-color: rgba(0,0,0,0.6); // This is in the form rgba(R,G,B,a) where a is your opacity
+}
+
+.column {
+    z-index: 80;
+}
+
+.bold-text {
+    color: white;
+}

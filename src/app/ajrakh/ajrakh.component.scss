@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+img {
+  float: left;
+  width:  270px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.video {
+  display: block;
+  width: 250px;
+  height:500px;
+}
+
+.box {
+  background-color: rgba(0,0,0,.5);
+}
+
+.heading {
+    color: #FBF2E9;
+    font-family: 'Francois One', sans-serif;
+    text-transform: unset;
+    font-weight: 500;
+    font-size: 40px;
+    text-shadow: 1.5px 1.5px black;
+}
+
+h1 {
+  z-index: 10;
+}
+
+.hero-video {
+  display: block;
+}
+
+.imgcss {
+    width: 200px;
+}
+
+.has-image-centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bkImage {
+    background-image: url('../../assets/ajrakh2.png');
+  }
+
+  .txtInfo {
+    color: black;
+    text-shadow: black;
+  }
+
+  .title {
+    color: black;
+  }

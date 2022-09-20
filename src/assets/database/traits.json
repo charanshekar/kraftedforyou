@@ -1,0 +1,23 @@
+[
+    {
+        "id":0,
+        "name":"Ajrakh",
+        "description":"Sustainable. Natural. Eco-friendly.",
+        "imageUrl":"../../assets/ajrakh.PNG",
+        "rLink":"/ajrakh"
+    },
+    {
+        "id":1,
+        "name":"Madhubani",
+        "description":"People’s living cultural heritage",
+        "imageUrl":"../../assets/madhubani.PNG",
+        "rLink":"/madhubani"
+    },
+    {
+        "id":2,
+        "name":"Stone-Work Embroidery",
+        "description":"Gems and raw cut stones",
+        "imageUrl":"../../assets/stone.jpg",
+        "rLink":"/stone-work"
+    }
+]

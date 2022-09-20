@@ -1,0 +1,91 @@
+<app-header></app-header>
+
+<div class="container">
+    <section class="hero is-halfheight is-bold mt-3">
+        
+        <div class="hero-video">
+            <video poster="" id="bgvid" playsinline autoplay [muted]="'muted'" loop>
+                <source src="../../assets/vids/contactus.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="heading has-text-centered">
+                    Contact Us
+                </h1>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <div class="location">
+        <div class="title has-text-centered">
+            Location
+        </div>
+        <div class="row row-content has-text-centered">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15131.62384033007!2d73.8380398!3d18.5331513!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ea4694eea6cb3df!2sKrafted%20For%20You!5e0!3m2!1sen!2sin!4v1660581672859!5m2!1sen!2sin"
+             width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+<section class="section">
+    <div class="container">
+        <form class="box" (ngSubmit)="submitForm()" #contactForm="ngForm">
+            {{name}}
+            <div class="field">
+                <label class="label" for="">Name</label>
+                <input  #nameInput="ngModel" 
+                        type="text" 
+                        name="name" 
+                        class="input" 
+                        [(ngModel)]="name" 
+                        required>
+
+                <div class="help is-error" *ngIf="nameInput.invalid && nameInput.touched">
+                    Name is required.
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="">Phone Number</label>
+                <input  #phoneInput="ngModel" 
+                        type="number" 
+                        name="phone" 
+                        class="input" 
+                        [(ngModel)]="phone"
+                        required
+                        minlength=10
+                        maxlength=10>
+                <div class="help is-error" *ngIf="phoneInput.invalid && phoneInput.touched">
+                    Phone number is required.
+                </div>
+                <div class="help is-error" *ngIf="phoneInput?.['minlength']">
+                    Phone number needs to be 10 digits.
+                </div>
+
+            </div>
+            <div class="field">
+                <label class="label" for="">Email</label>
+                <input  #emailInput="ngModel" 
+                        type="text" 
+                        name="email" 
+                        class="input" 
+                        [(ngModel)]="email" 
+                        required 
+                        email>
+                <div class="help is-error" *ngIf="emailInput.invalid && emailInput.touched">
+                    Email is required and should be valid.
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="">Enquiry</label>
+                <textarea type="text" name="enquiry" class="textarea" [(ngModel)]="enquiry"></textarea>
+            </div>
+            <button type="submit" class="button is-primary" [disabled]="contactForm.invalid">
+                Submit
+            </button>
+        </form>
+    </div>
+</section>

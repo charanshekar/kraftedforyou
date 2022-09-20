@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="columns mt-5 is-8 is-variable" *ngIf="traits.default">
+        <div class="column is-3" *ngFor="let trait of traits.default">
+            <div class="card">
+            <h3 class="title"></h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50"/>
+                </svg>
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+        <h1 class="title has-text-centered is-size-4">Hand krafted just for you.</h1>
+        <div class="columns mt-5 is-8 is-variable" *ngIf="traits.default">
+            <div class="column is-3" *ngFor="let trait of traits.default">\
+                <div class="card">
+                    <div class="card-image has-text-centered px-6">
+                        <img src="" alt="">
+                    </div>
+                    <div class="card-content has-text-centered">
+                        <p class="title is-size-6">{{trait.name}}</p>
+                    </div>
+                    <footer class="card-footer-item">
+                        <a href="" class="has-text-grey">View</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+.location {
+    z-index: 99;
+}
+
+.columns {
+    z-index: 10;
+}
+
+
+.container {
+    z-index: 5;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: hsla(39, 84%, 61%, 0.416);
+}
+
+.label {
+    color: black;
+}
+
+.bgImage {
+    background-image: url('../../assets/contact2.PNG');
+    //object-fit: contain;
+}
+
+.heading {
+    color: white;
+    font-family: 'Francois One', sans-serif;
+    text-transform: unset;
+    font-weight: 500;
+    font-size: 35px;
+    text-shadow: 1px 0.5px black;
+}
+
+.hero-video {
+    display: unset;
+    display: block;
+}

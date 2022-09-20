@@ -1,0 +1,28 @@
+
+<section class="section">
+    <div class="container">
+        <h1 class="heading has-text-centered">krafted just for you.</h1>
+        <div class="columns mt-2 is-8 is-variable" *ngIf="traits.default">
+            <div class="column is-4 is-half-tablet is-centered" *ngFor="let trait of traits.default">
+                <div class="card is-clickable" routerLink="{{trait.rLink}}">
+                    <div class="card-image image is-5by4">
+                        <img [src]="trait.imageUrl" alt="">
+                    </div>
+                    <div class="card-content has-text-centered">
+                        <p class="title is-size-5">{{trait.name}}</p>
+                    </div>
+                    <div class="columns is-centered is-hidden-mobile">
+                            <div class="column bar">
+                                <div class="hide is-centered" >
+                                    <div class="filterer"></div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="unhide has-text-centered is-hidden-touch" >
+                        <p class="subtitle">{{trait.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

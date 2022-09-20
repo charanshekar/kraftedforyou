@@ -1,0 +1,190 @@
+<section class="hero is-transparent is-halfheight video">
+    <div class="hero-video">
+        <video poster="" id="bgvid" playsinline autoplay muted loop>
+            <source src="../../assets/indiandress.mp4" type="video/mp4">
+        </video>
+    </div>
+  <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+        <nav class="navbar">
+            <div class="navbar-brand">
+            <a class="navbar-item" routerLink="">
+                <img src="../assets/logo.png" >
+            </a>
+
+            <div class="mobile-logo container has-text-centered is-hidden-desktop">
+                <p class="title">
+                    <img src="../../assets/logo2.png" alt="Krafted for you" width="100px">
+                </p>
+            </div>
+
+            <span class="navbar-burger" data-target="navbarMenuHeroA">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-end">
+                <a  class="navbar-item" 
+                    routerLink="" 
+                    routerLinkActive="active-link" 
+                    [routerLinkActiveOptions]="{exact:true}">
+                  Home
+                </a>
+                <a class="navbar-item">
+                  About Us
+                </a>
+                <a class="navbar-item" routerLink="/contact">
+                  Contact
+                </a>
+                <a class="navbar-item" routerLink="/wardrobe">
+                  Wardrobe
+                </a>
+              </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+        <div class="container has-text-centered is-hidden-touch">
+          <p class="title">
+              <img src="../../assets/logo2.png" alt="Krafted for you" width="400px">
+          </p>
+          <p class="subtitle animate-charcter">
+            
+          </p>
+        </div>
+        <div class="container has-text-centered is-hidden-desktop">
+          <p class="title">
+            <img src="../../assets/transparent.png" alt="" width="400px">
+          </p>
+        </div>
+    </div>
+
+    <!-- Hero footer: will stick at the bottom -->
+
+    
+</section>
+
+
+<div class="home container content has-text-centered ">
+
+    <section class="hero">
+        <div class="hero-body">
+            <p class="title concept">
+                A Concept Store
+            </p>
+            <p class="subtitle concept">
+                A curated selection of Fashion, Culinary Arts & Experiences created especially for you.
+            </p>
+        </div>
+    </section>
+
+    <app-traits-list></app-traits-list>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-body">
+                <p class="title ">
+                  [UNIQUE SELLING POINTS]
+                </p>
+                <p class="subtitle">
+                  ..
+                </p>
+              </div>
+        </div>
+
+        <div class="columns box" [ngClass]="[ isVcentered ? 'is-vcentered' : 'is-tablet']">
+
+            <div class="column">
+                <h3 class="heading">Krafted by Hand</h3>
+            </div>
+            <div class="column is-vcentered">
+                <h2 class="heading"><b>Block Printed Fabrics</b></h2>
+                <p class="">
+                    The design created by hand block print reflects the Indian culture and art. This is one of the most ancient forms of printing methods used in India.
+                </p>    
+            </div>
+            <div class="column">
+                <img class="" src="../../assets/home/handblockLogo.png" alt="handblockLogo" width="200">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="columns box" [ngClass]="[ isVcentered ? 'is-vcentered' : 'is-tablet']">
+
+            <div class="column">
+                <h3 class="heading">From the most Experienced Kraftsmen</h3>
+            </div>
+            <div class="column">
+                <h2 class="heading"><b>Tailor-made to fit you</b></h2>
+                <p class="">With designated skillful tailors for each fashion attire, we provide a complex and finely engineered bespoke wa</p>    
+            </div>
+            <div class="column">
+                <img class="" src="../../assets/home/bespoke.png" alt="bespoke" width="130">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="columns box" [ngClass]="[ isVcentered ? 'is-vcentered' : 'is-tablet']">
+
+            <div class="column">
+                <h3 class="heading">Krafted by Hand</h3>
+            </div>
+            <div class="column">
+                <h2 class="heading"><b>Block Printed Fabrics</b></h2>
+                <p class="">
+                    The design created by hand block print reflects the Indian culture and art. This is one of the most ancient forms of printing methods used in India.
+                </p>    
+            </div>
+            <div class="column">
+                <img class="" src="../../assets/home/handblockLogo.png" alt="handblockLogo" width="200">
+            </div>
+        </div>
+<!--
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-6">
+                        <h1 class="is-size-1">
+                            Hand Printed Khadi
+                        </h1>
+                        <p>
+                            Hand block printed suit sets are available in a range of patterns and designs so whether it is an office look, 
+                            casual look or a party look, you can select your prints depending on the occasion. 
+                            Hand block printed kurtas, kurtis and suits sets are also worn at ceremonies, rituals and other events.
+                        </p>
+                        <a href="#">
+                            <img src="../../assets/more.png" alt="Read More" width="35px">
+                        </a>
+                    </div>
+                    <div class="column is-6">
+                        <div class="hero-imagesize">
+                            <img src="../../assets/hand.jpg" alt="Hand Print">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+-->
+
+        <div class="section is-transparent">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                        <h2 class="is-size-2 is-family-secondary has-background-white-ter">
+                            Explore Our Wardrobe
+                        </h2>
+                        <a href="#">
+                            <img src="../../assets/more.png" alt="Read More" width="35px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </section>
+</div>
